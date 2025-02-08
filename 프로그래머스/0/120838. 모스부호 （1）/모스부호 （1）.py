@@ -8,9 +8,6 @@ def solution(letter):
         '-.--':'y','--..':'z'
     }
     for str1 in letter.split():
-        for i in morse.keys():
-            if str1 == i:
-                answer.append(morse[i])
-                break
+        answer.append(morse[str1])
         
     return "".join(answer)
